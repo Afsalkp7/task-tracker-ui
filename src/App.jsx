@@ -39,7 +39,7 @@ const RegistrationForm = () => {
   }
 
   if (registrationSuccess) {
-    return <LoginForm />;
+    return <LoginForm setRegistrationSuccess={setRegistrationSuccess}/>;
   }
 
   return (
@@ -127,6 +127,15 @@ const RegistrationForm = () => {
                 >
                   Create an account
                 </button>
+                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                  You have already an account?{" "}
+                  <a
+                    onClick={()=>setRegistrationSuccess(true)}
+                    className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  >
+                    Sign up
+                  </a>
+                </p>
               </form>
             </div>
           </div>
