@@ -1,3 +1,6 @@
 # TASK TRACKER FRONTEND
 
-Using REACT + VITE
+CRUD Operation
+frontend : React
+Backend : node js
+
